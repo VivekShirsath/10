@@ -10,9 +10,12 @@ export const DataProvider = ({children}) => {
     const [state,dispatch] = useReducer(reducer,{
         products : JSON.parse(localStorage.getItem("products")) ?
         JSON.parse(localStorage.getItem("products")) : inventoryData,
-        category : "All",
-        low : false,
-        sort : "name"
+        category : JSON.parse(localStorage.getItem("category")) ?
+        JSON.parse(localStorage.getItem("category")) : "All",
+        low : JSON.parse(localStorage.getItem("low")) ?
+        JSON.parse(localStorage.getItem("low")) :false,
+        sort : JSON.parse(localStorage.getItem("sort")) ?
+        JSON.parse(localStorage.getItem("sort")):"name"
 
     })
 

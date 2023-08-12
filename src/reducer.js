@@ -2,20 +2,21 @@
 export const reducer = (state,action) => {
     switch(action.type){
         case "CHANGE_DEP":{
+            localStorage.setItem("category",JSON.stringify(action.payload))
             return{
                 ...state,
-                category : action.payload,
+                category : action.payload,     
             }
         }
         case "LOW_STOCK":{
-            console.log(action.payload)
+            localStorage.setItem("low",JSON.stringify(action.payload))
             return{
                 ...state,
                 low : action.payload
             }
         }
         case "SORT_PRODUCTS":{
-            console.log(action.payload)
+            localStorage.setItem("sort",JSON.stringify(action.payload))
             return{
                 ...state,
                 sort : action.payload
