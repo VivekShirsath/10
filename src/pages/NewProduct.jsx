@@ -56,6 +56,7 @@ export const NewProduct = () => {
                     value={formData.name}
                     name="name"
                     onChange={handleInputChange}
+                    required
                     />
                 </div>
                 <div className="flex flex-col gap-2">

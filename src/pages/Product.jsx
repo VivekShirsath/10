@@ -63,7 +63,7 @@ export const Product = () => {
             <NavLink to="/new"><button className="bg-blue-600 p-3 rounded-md text-white">New</button>
             </NavLink>
         </div>
-        <List products={...sortByStocks}/>
+        <List products={sortByStocks}/>
         </div>
     )
 }
