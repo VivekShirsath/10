@@ -8,6 +8,7 @@ function App() {
   return (
     <>
     <h3 className='bg-red-400'>asa</h3>
+    <p>sdasd</p>
     <Routes>
       <Route>
           <Route path="/" element={<Home/>}/>
