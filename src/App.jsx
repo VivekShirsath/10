@@ -9,6 +9,7 @@ function App() {
     <>
     <h3 className='bg-red-400'>asa</h3>
     <p>sdasd</p>
+    <h3>dsd</h3>
     <Routes>
       <Route>
           <Route path="/" element={<Home/>}/>
